@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>The Classic Library</title>
+
+  <meta name="description" content="A books eCommerce site.">
+  <meta name="author" content="MagnusIskander">
+
+  <link rel="stylesheet" href="/styles/normalize/normalize.css">
+  <link rel="stylesheet" href="/styles/mfd.css">
+  
+</head>
+
+<body>
+  <!-- MAIN SITE / APPLICATION CONTENT... -->
+
+  <!-- ===== MFD ===== -->
+
+  <!-- <header>
+
+    <a href="./">
+      <h1 class="logo">the classic library</h1>
+    </a>
+
+    <nav>
+      <ul class="menu-items">
+        <li><a href="#">home</a></li>
+        <li><a href="#">catalog</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" name="" id="">
+
+    <div class="hamburger-lines">
+      <span class="line line1">1</span>
+      <span class="line line2">2</span>
+      <span class="line line3">3</span>
+    </div>
+
+  </header> -->
+
+  <%- include('./partials/header') -%>
+
+  <main>
+
+    <section id="catalog">
+      
+        <h2>Contact Us</h2>
+
+        <p>If you would like to send us a message or request a specific book, please leave your information here, and we will get back to you as soon as possible.</p>
+
+      <div class="container">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your First Name [*]" required>
+          <input type="text" name="lastname" placeholder="Your Last Name [*]" required>
+          <input type="text" name="company" placeholder="Your Company">
+          <input type="text" name="subject" placeholder="The Subject [*]" required>
+          <input type="email" name="email" placeholder="Your Email [*]" required>
+          <input type="text" name="phone" placeholder="Your Phone">
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <label class="note">* The fields marked with an asterisk [*] are mandatory *</label>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <%- include('./partials/footer') -%>
+
+  <!-- ===== /MFD ===== -->
+
+</body>
+
+</html>

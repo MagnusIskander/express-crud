@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>The Classic Library</title>
+
+  <meta name="description" content="A books eCommerce site.">
+  <meta name="author" content="MagnusIskander">
+
+  <link rel="stylesheet" href="/styles/normalize/normalize.css">
+  <link rel="stylesheet" href="/styles/mfd.css">
+  
+</head>
+
+<body>
+  <!-- MAIN SITE / APPLICATION CONTENT... -->
+
+  <!-- ===== MFD ===== -->
+
+  <!-- <header>
+
+    <a href="./">
+      <h1 class="logo">the classic library</h1>
+    </a>
+
+    <nav>
+      <ul class="menu-items">
+        <li><a href="#">home</a></li>
+        <li><a href="#">catalog</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" name="" id="">
+
+    <div class="hamburger-lines">
+      <span class="line line1">1</span>
+      <span class="line line2">2</span>
+      <span class="line line3">3</span>
+    </div>
+
+  </header> -->
+
+  <%- include('./partials/header') -%>
+
+  <main>
+
+    <section id="catalog">
+      
+        <h2>Catalog</h2>
+
+        <p>Explore our collection of classic books that have withstood the test of time and left a lasting mark on literature. Find your books here and have a happy reading!</p>
+
+        <a href="/catalog/add" class="add-button">Add book</a>
+      
+        <div class="catalog-container">
+
+        <% catalog.forEach(book => { %>
+
+          <a href="/catalog/<%= book.id %>" class="">
+
+            <div class="card">
+
+              <div class="imgBox">
+                <img src="/images/covers/<%= book.pic %>" alt="<%= book.name %> book cover" class="product">
+              </div>
+            
+              <div class="contentBox">
+                <h3><%= book.name %></h3>
+                <h3><%= book.author %></h3>
+                <h2 class="price">$ <%= toThousand(book.price) %> </h2>
+                <a href="#" class="buy">Buy Now</a>
+              </div>
+            
+            </div>
+
+          </a>
+
+        <% }) %>
+
+        </div>
+
+      </main>
+
+  <%- include('./partials/footer') -%>
+
+  <!-- ===== /MFD ===== -->
+
+</body>
+
+</html>

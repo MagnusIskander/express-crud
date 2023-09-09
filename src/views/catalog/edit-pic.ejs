@@ -1,0 +1,27 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/header') -%>
+
+<main>
+
+  <section id="catalog">
+    
+      <h2>Edit book</h2>
+
+      <p>Edit here the cover of the book selected.</p>
+
+    <div class="container">
+
+        <input type="button" onclick="document.getElementById('pic').click()" value="Select" class="">
+        <input type="file" id="pic" name="pic">
+        <form action="/products/<%= editPic.id %>/edit-pic/?_method=PATCH" method="POST"></form>
+            <input type="submit" value="Upload" class="">
+        </form>
+
+        <a href="/catalog/<%= editPic.id %>" class="cancel-button">Cancel</a>
+    </div>
+
+  </section>
+
+</main>
+
+<%- include('../partials/footer') -%>

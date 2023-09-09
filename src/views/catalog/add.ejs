@@ -1,0 +1,28 @@
+  <%- include('../partials/head') -%>
+  <%- include('../partials/header') -%>
+
+  <main>
+
+    <section id="catalog">
+      
+        <h2>Add book</h2>
+
+        <p>Add here all information about the new book.</p>
+
+      <div class="container">
+        <form action="/catalog" method="post" enctype="multipart/form-data">
+          <input type="text" name="name" placeholder="Provide the name [*]" required>
+          <input type="text" name="author" placeholder="Provide the author [*]" required>
+          <input type="text" name="price" placeholder="Provide the price">
+          <input type="file" name="pic" placeholder="Provide a picture [*]">
+          <textarea name="description" placeholder="Provide a description"></textarea>
+          <label class="note">* The fields marked with an asterisk [*] are mandatory *</label>
+          <input type="submit" value="Add book">
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <%- include('../partials/footer') -%>

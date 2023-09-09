@@ -1,0 +1,30 @@
+<%- include('../partials/head') -%>
+<%- include('../partials/header') -%>
+
+<main>
+
+  <section id="catalog">
+    
+      <h2>Edit book</h2>
+
+      <p>Edit here all information about the book selected.</p>
+
+    <div class="container">
+      <form class="" action="/catalog/<%= editBook.id %>?_method=PUT" method="POST">
+        <input type="text" name="name" value="<%= editBook.name %>" placeholder="Provide the name [*]" required>
+        <input type="text" name="author" value="<%= editBook.author %>" placeholder="Provide the author [*]" required>
+        <input type="text" name="price" value="<%= editBook.price %>" placeholder="Provide the price">
+        <!-- <input type="file" name="pic" placeholder="Provide a picture [*]"> -->
+        <input type="hidden" name="pic" value="<%= editBook.pic %>">
+        <textarea name="description" placeholder="Provide a description"><%= editBook.description %></textarea>
+        <label class="note">* The fields marked with an asterisk [*] are mandatory *</label>
+        <input type="submit" value="Edit book">
+        <a href="/catalog/<%= editBook.id %>" class="cancel-button">Cancel</a>
+      </form>
+    </div>
+
+  </section>
+
+</main>
+
+<%- include('../partials/footer') -%>

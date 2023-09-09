@@ -1,0 +1,90 @@
+[
+ {
+  "id": 1,
+  "name": "Rayuela",
+  "author": "Julio Cortazar",
+  "price": "61.98",
+  "description": "Rayuela es una novela experimental escrita por Julio Cortázar.",
+  "pic": "bk1.png"
+ },
+ {
+  "id": 2,
+  "name": "Meditaciones",
+  "author": "Marco Aurelio",
+  "price": "55.44",
+  "description": "Meditaciones es una serie de escritos filosóficos de Marco Aurelio.",
+  "pic": "bk2.png"
+ },
+ {
+  "id": 3,
+  "name": "Consolación a Polibio",
+  "author": "Séneca",
+  "price": "42.77",
+  "description": "Consolación a Polibio es una obra de Séneca que aborda temas de filosofía política.",
+  "pic": "bk3.png"
+ },
+ {
+  "id": 4,
+  "name": "Discurso del método",
+  "author": "René Descartes",
+  "price": "78.99",
+  "description": "Discurso del método es una obra filosófica escrita por René Descartes.",
+  "pic": "bk4.png"
+ },
+ {
+  "id": 5,
+  "name": "Enciclopedia de las ciencias filosóficas",
+  "author": "G. W. F. Hegel",
+  "price": "156.83",
+  "description": "Enciclopedia de las ciencias filosóficas es una obra de G. W. F. Hegel.",
+  "pic": "bk5.png"
+ },
+ {
+  "id": 6,
+  "name": "Focus",
+  "author": "Daniel Goleman",
+  "price": "97.43",
+  "description": "Focus es un libro de Daniel Goleman sobre la atención y el enfoque.",
+  "pic": "bk6.png"
+ },
+ {
+  "id": 7,
+  "name": "El código Da Vinci",
+  "author": "Dan Brown",
+  "price": "33.55",
+  "description": "El código Da Vinci es una novela de misterio escrita por Dan Brown.",
+  "pic": "bk7.png"
+ },
+ {
+  "id": 8,
+  "name": "La divina comedia",
+  "author": "Dante Alighieri",
+  "price": "45.22",
+  "pic": "bk8.png",
+  "description": "La divina comedia es un poema épico escrito por Dante Alighieri."
+ },
+ {
+  "id": 9,
+  "name": "Historia del tiempo",
+  "author": "Stephen Hawking",
+  "price": "50.03",
+  "description": "Libro de divulgación física sobre el cosmos y sus fundamentos físicos.",
+  "pic": "no-cover.jpg"
+ },
+ {
+  "id": 10,
+  "name": "Álgebra",
+  "author": "Aurelio Baldor",
+  "price": "63.86",
+  "description": "Libro de álgebra básica para el nivel secundario.",
+  "pic": "1694226479011.jpg"
+ },
+ {
+  "id": 11,
+  "name": "Prueba",
+  "author": "John Doe",
+  "price": "00.00",
+  "description": "Edítame o bórrame.",
+  "pic": "no-cover.jpg"
+ }
+]

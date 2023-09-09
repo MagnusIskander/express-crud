@@ -1,0 +1,51 @@
+<%- include('../partials/head') -%>
+  <%- include('../partials/header') -%>
+
+    <main>
+
+      <section id="catalog">
+
+        <h2>Book details</h2>
+
+        <p>Watch here all information about the book selected.</p>
+
+        <div class="container">
+          <div class="">
+
+            <!-- <div class="imgBox">
+              <img src="/images/covers/<%= book.pic %>" alt="libro <%= book.name %>" class="product">
+            </div> -->
+
+            <div class="detail-box">
+              <img src="/images/covers/<%= book.pic %>" alt="libro <%= book.name %>" class="product">
+              <h2>
+                Book name: <%= book.name %>
+              </h2>
+              <h2>
+                Book author: <%= book.author %>
+              </h2>
+              <h2>
+                Book description: <%= book.description %>
+              </h2>
+              <h2 class="price">Book price: $ <%= toThousand(book.price) %>
+              </h2>
+            </div>
+
+            <div>
+              <a href="/catalog/<%= book.id %>/edit" class="edit-button">Edit book</a>
+              <a href="/catalog/" class="edit-button">Back</a>
+              <!-- <a href="/catalog/<%= book.id %>/editPic" class="edit-button">Edit cover</a> -->
+              <!-- <a href="/catalog/<%= book.id %>/delete" class="delete-button">Delete book [!]</a> -->
+              <form action="/catalog/<%= book.id %>?_method=DELETE" method="POST">
+                <button type="submit" class = "delete-button">Delete book [!]</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <%- include('../partials/footer') -%>
